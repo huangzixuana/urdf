@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="cover1">
+  <link
+    name="tool">
+    <inertial>
+      <origin
+        xyz="0.00487299733815279 -0.0336176897602329 0.066366699971169"
+        rpy="0 0 0" />
+      <mass
+        value="34.0232327684214" />
+      <inertia
+        ixx="1.92934331293239"
+        ixy="-4.09754887625664E-05"
+        ixz="3.01818142483133E-05"
+        iyy="4.69079085016872"
+        iyz="-0.000194881045291987"
+        izz="6.56475849156866" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cover1/meshes/tool.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cover1/meshes/tool.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

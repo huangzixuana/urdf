@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="vaccum">
+  <link
+    name="tool">
+    <inertial>
+      <origin
+        xyz="5.0734E-05 -0.032347 -0.061828"
+        rpy="0 0 0" />
+      <mass
+        value="28.562" />
+      <inertia
+        ixx="1.6923"
+        ixy="0.00014315"
+        ixz="-5.407E-06"
+        iyy="4.8227"
+        iyz="-0.0008361"
+        izz="6.5026" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vaccum/meshes/tool.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://vaccum/meshes/tool.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
