@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="base_car">
+  <link
+    name="base_car">
+    <inertial>
+      <origin
+        xyz="-0.21193 0.016503 0.4325"
+        rpy="0 0 0" />
+      <mass
+        value="2203.4" />
+      <inertia
+        ixx="104.59"
+        ixy="-0.45492"
+        ixz="2.0717"
+        iyy="164.29"
+        iyz="-1.0682"
+        izz="233.88" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://base_car/meshes/base_car.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://base_car/meshes/base_car.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
