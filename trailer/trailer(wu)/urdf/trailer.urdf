@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="trailer">
+  <link
+    name="trailer">
+    <inertial>
+      <origin
+        xyz="-0.42744 -0.054341 1.0095"
+        rpy="0 0 0" />
+      <mass
+        value="239.7" />
+      <inertia
+        ixx="55.105"
+        ixy="-0.12494"
+        ixz="1.0714"
+        iyy="41.41"
+        iyz="0.048048"
+        izz="74.069" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trailer/meshes/trailer.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://trailer/meshes/trailer.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
