@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="yuntai">
+  <link
+    name="base_yuntai">
+    <inertial>
+      <origin
+        xyz="-0.00018418 -0.00057821 0.50604"
+        rpy="0 0 0" />
+      <mass
+        value="304.47" />
+      <inertia
+        ixx="7.8505"
+        ixy="0.00061788"
+        ixz="8.9504E-05"
+        iyy="3.9028"
+        iyz="0.00015743"
+        izz="7.5697" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yuntai/meshes/base_yuntai.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://yuntai/meshes/base_yuntai.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

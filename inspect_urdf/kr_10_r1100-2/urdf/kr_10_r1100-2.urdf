@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="kr_10_r1100-2">
+  <link
+    name="base_arm">
+    <inertial>
+      <origin
+        xyz="-0.046785 -0.00098204 0.10974"
+        rpy="0 0 0" />
+      <mass
+        value="91.64" />
+      <inertia
+        ixx="0.60334"
+        ixy="-0.00040839"
+        ixz="-0.0038944"
+        iyy="0.68726"
+        iyz="0.00020595"
+        izz="0.5917" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/base_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.4 0.4 0.4 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/base_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="0.0080148 -0.0054241 0.11231"
+        rpy="0 0 0" />
+      <mass
+        value="45.516" />
+      <inertia
+        ixx="0.52733"
+        ixy="-0.034725"
+        ixz="-0.03364"
+        iyy="0.35598"
+        iyz="0.020992"
+        izz="0.40114" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.8 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_a1"
+    type="revolute">
+    <origin
+      xyz="-0.00061909 0 0.2157"
+      rpy="0 0 0" />
+    <parent
+      link="base_arm" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="0.26612 -0.02538 0.068776"
+        rpy="0 0 0" />
+      <mass
+        value="84.384" />
+      <inertia
+        ixx="0.443"
+        ixy="0.22357"
+        ixz="-0.027695"
+        iyy="3.8805"
+        iyz="0.00077028"
+        izz="3.6823" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.8 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_a2"
+    type="revolute">
+    <origin
+      xyz="0.011395 -0.071615 0.1803"
+      rpy="1.3545 -1.5708 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="0.011131 0.052479 0.072757"
+        rpy="0 0 0" />
+      <mass
+        value="31.013" />
+      <inertia
+        ixx="0.21568"
+        ixy="-0.02434"
+        ixz="-0.00045379"
+        iyy="0.080696"
+        iyz="-0.0033315"
+        izz="0.22357" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.8 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_a3"
+    type="revolute">
+    <origin
+      xyz="0.55896 -0.034133 -0.008"
+      rpy="0 0 0" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-5.4213E-05 -0.0016695 0.15386"
+        rpy="0 0 0" />
+      <mass
+        value="27.356" />
+      <inertia
+        ixx="0.24636"
+        ixy="6.8921E-05"
+        ixz="0.00023212"
+        iyy="0.22365"
+        iyz="0.0075463"
+        izz="0.066562" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.8 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_a4"
+    type="revolute">
+    <origin
+      xyz="0.025 0.205 0.0755"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="0.00037113 -0.053077 0.011452"
+        rpy="0 0 0" />
+      <mass
+        value="5.9558" />
+      <inertia
+        ixx="0.0097612"
+        ixy="5.2407E-06"
+        ixz="-4.0674E-05"
+        iyy="0.0085564"
+        iyz="7.7038E-05"
+        izz="0.0066757" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.8 0.8 0.8 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_a5"
+    type="revolute">
+    <origin
+      xyz="-0.0002289 0.0545 0.31"
+      rpy="0 0 0" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0.0042 -0.99999 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="0.00014555 -0.0022055 -0.010033"
+        rpy="0 0 0" />
+      <mass
+        value="0.59297" />
+      <inertia
+        ixx="0.00022595"
+        ixy="-5.5738E-07"
+        ixz="-2.5386E-06"
+        iyy="0.00023504"
+        iyz="4.1459E-05"
+        izz="0.00041455" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.2 0.2 0.2 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://kr_10_r1100-2/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_a6"
+    type="revolute">
+    <origin
+      xyz="0.0011204 -0.054496 0.066994"
+      rpy="-2.9253 0 0" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0.013305 -0.21466 -0.9766" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
